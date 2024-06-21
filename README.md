@@ -1,5 +1,4 @@
 # Project Summary
-<br><br/>
 ## Introduction
 Briefly introduce the project, its objectives, and the dataset used.
 
