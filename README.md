@@ -154,11 +154,10 @@ There appears to be a slightly higher churn rate for credit card customers who a
 
 ### Next Steps:
 
-### To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken. This may help in understanding the underlying drivers of churn behavior specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
+### To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken and if the model does not capture the complexity of the dataset, other models will be considered. This may help in understanding the underlying drivers of churn behavior specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
 
 # Predictive Modeling
-Approach
-Describe the modeling approach taken, including the types of models tested (e.g., linear regression, logistic regression, random forest), and preprocessing steps (e.g., scaling, feature engineering).
+## Introduction
 
 ## Model Performance
 Discuss the performance of each model tested, including accuracy metrics (e.g., accuracy, precision, recall, F1-score) and any challenges encountered.
