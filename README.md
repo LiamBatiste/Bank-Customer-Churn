@@ -230,7 +230,7 @@ Meaning about 38.3% of the customers predicted as churned actually churned throu
 So the model identified only about 71.8% of all churned customers, so still poor.
 <br></br>
 Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance 
-
+***
 ### Random Forest Model (RF) 
 
 ## Refinement 
