@@ -159,6 +159,17 @@ There appears to be a slightly higher churn rate for credit card customers who a
 # Predictive Modeling
 ## Introduction
 
+It is important that the training variables used within the model as those which likely have impact on customer churn, such as; age, gender, member activity, balance and credit card (given the problem statement). Additionally, it is important to avoid multicollinearity issues due to predictors used within the model correlating highly with other predictors. Hence the exclusion of product number from this analysis, given it's medium negative correlation score with products number (-0.30).
+
+The objective of this Model is to use the following variables as part of <b>Multivariate Regression Analysis</b> to predict churn: 
+#### - Gender
+#### - Age
+#### - Member Activity
+#### - Balance
+#### - Credit Card
+
+The model of choice was Multivariate Linear Regression
+
 ## Model Performance
 Discuss the performance of each model tested, including accuracy metrics (e.g., accuracy, precision, recall, F1-score) and any challenges encountered.
 
