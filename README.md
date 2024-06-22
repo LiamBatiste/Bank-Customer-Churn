@@ -21,6 +21,11 @@ The dataset provided for this Analysis has been taken from Kaggle - https://www.
 # Data Exploration
 Overview
 Provide an overview of the dataset, including its size, features, and target variable (churn).
+The dataset contained 1000 entries, each with no null data for the 12 fields. Datatypes were correctly assigned for all fields. 
+
+The features of the dataset were ranked corrleation-wise using Pearson Correlation Coefficients. All fields were compared with another using a Correlation Matrix: 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357)
+
 
 ## Key Findings
 Summarize the key insights gained during data exploration, such as distributions of variables, correlations, and initial observations.
