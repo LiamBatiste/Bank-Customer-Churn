@@ -192,7 +192,7 @@ So the model identified only about 8.8% of all churned customers.
 <br></br>
 
 Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
-
+***
 #### Logistic Regression Model (LR) 
 Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, 
 
