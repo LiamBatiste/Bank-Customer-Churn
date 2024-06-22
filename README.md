@@ -232,10 +232,8 @@ So the model identified only about 71.8% of all churned customers, so still poor
 Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance. Therefore alternative predictive models were considered.
 ***
 ### Random Forest Model (RF) 
-When fitting the dataset to the RF model when comparing training (0.999) and test (0.854) scores a large difference of 14.5% was observed, this would suggest possible overfitting towards the training dataset's noise and outliers and so may not generalise well to unseen datasets. To avoid this, 
+When fitting the dataset to the RF model when comparing training (0.999) and test (0.854) scores a large difference of 14.5% was observed, this would suggest possible overfitting towards the training dataset's noise and outliers and so may not generalise well to unseen datasets. To combat this, 
 
-## Refinement 
-Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
 
 ## Best Model 
 Detail the best-performing model selected based on evaluation metrics, such as test accuracy and other relevant metrics.
