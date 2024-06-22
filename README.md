@@ -110,6 +110,10 @@ A higher chance of churn can be observed for active members of the bank. This in
 ### - Exploration of Balance and Churn by Credit Card Status
 ### - Exploration of Active Member Status and Churn by Credit Card Status
 
+## Concluding Examinations of Churn Rate- Age and Credit Cards:
+There can be an observed set of spikes in churn rate for non-holders for the ages of 47, 57 and 68. An irregular rise in churn was observed ages 65 and 70 for credit card holders. These changes given the sample size (2495 records) may be due to chance and so it would be of use to perform a significance test to determine as such. We will presume that these age groups display true higher churn and as a result these ages for non-credit and credit card holders should be targeted by the bank, to improve general customer retention and increase retained credit card customers. Further, Given that the churn of credit card holders occurs in their 'retirement period', there is opportunity for the bank to incorporate incentivised reward packages such as travel or health and wellness benefits to preserve more of said demographic. 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/441a6591-e6a1-4d8e-9c0c-f7f4d70dcd51)
+
 # Predictive Modeling
 Approach
 Describe the modeling approach taken, including the types of models tested (e.g., linear regression, logistic regression, random forest), and preprocessing steps (e.g., scaling, feature engineering).
