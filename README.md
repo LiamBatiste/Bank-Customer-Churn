@@ -274,7 +274,7 @@ Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/44c6ac81-e5e9-479d-b542-23e78bc3939c)
 ---
 
-**Logistoc Regression performance metrics:**
+**Logistic Regression performance metrics:**
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/edfd220c-f11d-4eec-a8f9-b6976aa71927)
 ---
