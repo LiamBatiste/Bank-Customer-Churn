@@ -259,7 +259,7 @@ Continuously monitor the effectiveness of implemented strategies using real-time
 
 # Appendix 
 ### **Sample of dataset Used:**
-<br></br>
+
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/b388d08c-ce77-4485-a3e0-c3ee9c0bb3c8)
 
 ###### Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data
