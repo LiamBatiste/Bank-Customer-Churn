@@ -175,7 +175,9 @@ Discuss the performance of each model tested, including accuracy metrics (e.g., 
 #### Multivariate Linear Regression model (MLR) 
 Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead suited for continous target variables. 
 
-To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, accuracy scores and a confusion matrix was instead used to gain a deeper understanding of the 
+To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, accuracy scores and a confusion matrix was instead used to gain a deeper understanding of the; true negatives (TN), false positives (FP), false negatives (FN) and true positives (TP) which were as such: 
+
+- 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
