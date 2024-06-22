@@ -63,17 +63,17 @@ Descriptive statistics for each field were obtained along with data distribution
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9eb5e982-f380-45ff-8c72-880fde8c024b)
 
-FICO Bracket Interpretations (ranges from 300 to 850):
+**FICO Bracket Interpretations (ranges from 300 to 850):**
 ***
-###### Excellent: 800 to 850
+##### Excellent: 800 to 850
 ***
-###### Very Good: 740 to 799
+##### Very Good: 740 to 799
 ***
-###### Good: 670 to 739
+##### Good: 670 to 739
 ***
-###### Fair: 580 to 669
+##### Fair: 580 to 669
 ***
-###### Poor: 300 to 579
+##### Poor: 300 to 579
 ***
 
 Thus the majority of customers within the dataset are of 'fair' credit scores. Conversely, There is also some clear outliers within the dataset that fall into the 'Poor' bracket. This could be an indication of a business imitative proposed by the bank such as subprime lending or a credit repair programme. When observing a Histogram distribution, negative skew can be seen, which is less indicative of the former mentioned initiatives.
