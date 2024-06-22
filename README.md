@@ -1,6 +1,22 @@
 # Project Summary
 ## Introduction
-Briefly introduce the project, its objectives, and the dataset used.
+A Bank has outsourced an already cleansed dataset, in hope that actionable insights can be gained to reduce customer churn within their company, particularly among credit card holders. By analysing the uncovered most influential factors of custoemr churn through Data
+Exploration and Predictive Modelling these insights can be leveraged to lower rates of customer churn for the Bank.
+
+The dataset provided for this Analysis has been taken from Kaggle - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset. This dataset cotains the following fields: 
+
+#### - customer_id, unused variable.
+- credit_score, used as input.
+- country, used as input.
+- gender, used as input.
+- age, used as input.
+- tenure, used as input.
+- balance, used as input.
+- products_number, used as input.
+- credit_card, used as input.
+- active_member, used as input.
+- estimated_salary, used as input.
+- churn, used as the target. 1 if the client has left the bank during some period or 0 if he/she has not.
 
 # Data Exploration
 Overview
