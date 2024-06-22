@@ -12,7 +12,7 @@
 A Bank has outsourced an already cleansed dataset, in hope that actionable insights can be gained to reduce customer churn within their company, particularly among credit card holders. By analysing the uncovered most influential factors of custoemr churn through Data
 Exploration and Predictive Modelling these insights can be leveraged to lower rates of customer churn for the Bank.
 
-The [dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset) This dataset cotains the following fields) provided for this Analysis has been taken from Kaggle: 
+The [dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset) cotains the following fields provided for this Analysis has been taken from Kaggle: 
 
 - customer_id, unused variable.
 - credit_score, used as input.
