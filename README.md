@@ -194,7 +194,7 @@ So the model identified only about 8.8% of all churned customers.
 Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
 ***
 #### Logistic Regression Model (LR) 
-Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, 
+Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, standard scalers were applied to all predictors to ensure that LR model would not be negatively impacted by different predictor's scale having a greater influence on the model (namely customer balance). 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
@@ -204,7 +204,6 @@ Detail the best-performing model selected based on evaluation metrics, such as t
 
 # Actionable Recommendations 
 Summarize the actionable recommendations derived from the predictive modeling results, emphasizing strategies to reduce customer churn based on the insights gained.
-
 
 # Appendix 
 Include any additional details, code snippets, or visualizations that support your findings but weren't included in the main sections.
