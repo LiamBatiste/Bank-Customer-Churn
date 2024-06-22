@@ -289,5 +289,8 @@ Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/f686f053-e80f-4b47-a77f-f7470f3f7d7f)
 ---
 
-
+**Best Random Forest Model Performance following Grid Search:**
+<br></br>
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/25142330-7c0b-40b8-81a7-c761ede369a7)
+---
 
