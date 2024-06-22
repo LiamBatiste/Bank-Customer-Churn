@@ -119,6 +119,36 @@ There can be an observed set of spikes in churn rate for non-holders for the age
 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/441a6591-e6a1-4d8e-9c0c-f7f4d70dcd51)
 
+## Concluding Examinations of Churn Rate - Balance and Credit Cards:
+
+<br>
+
+##### From observation, the customer density order for 'small depositors' appears as follows:
+***
+1.) Retained and Credit Card holders
+***
+2.) Retained and not Credit Card holders
+*** 
+3.) Churned and Credit Card holders
+*** 
+4.) Churned and not Credit Card Holders 
+
+<br>
+
+##### From observation, the customer density order for 'large depositors' appears as follows:
+***
+1.) Churned and Credit Card holders
+***
+2.) Churned and not Credit Card holders
+*** 
+3.) Retained and not Credit Card holders
+*** 
+4.) Retained and Credit Card holders 
+
+It appears that there is a higher density of retained small depositor customers, both with and without credit cards. Conversely, a higher density of large deposit customers, both with and without credit cards, are churning rather than being retained by the bank. This could be due to a greater focus by the bank on smaller depositors. The retention of small deposit customers suggests that the availability of credit cards has been an effective retention tool. On the other hand, the high churn of large depositors may not be a significant concern, as these customers are likely less reliant on credit cards as a source of capital, which could explain the higher density of churn among this customer segment. Overall, further analysis through predictive modelling using Multivariate Regression Analysis will help gain more insights for identifying customers at risk of churning.
+
+
+
 # Predictive Modeling
 Approach
 Describe the modeling approach taken, including the types of models tested (e.g., linear regression, logistic regression, random forest), and preprocessing steps (e.g., scaling, feature engineering).
