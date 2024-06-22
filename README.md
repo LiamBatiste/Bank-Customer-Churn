@@ -171,7 +171,7 @@ The objective of this Model is to use the following variables as part of <b>Mult
 The primary model of choice was Multivariate Linear Regression, given it's ability to facilitate the analysis that the impact of several predictors has on the target variable simultaneously. This might therefore be useful for predicting the likelihood/rate of a customer churning. Additionally it could potentially be used to quantify the contribution each predictor variable has towards customer churn with the Bank.
 
 ## Model Performance
-#### Multivariate Linear Regression model (MLR) 
+### Multivariate Linear Regression model (MLR) 
 Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead suited for continous target variables. 
 
 To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, a confusion matrix and aaccuracy scores were instead used to gain a deeper understanding of the; true negatives (TN), false positives (FP), false negatives (FN) and true positives (TP) which were as such: 
@@ -193,7 +193,7 @@ So the model identified only about 8.8% of all churned customers.
 
 Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
 ***
-#### Logistic Regression Model (LR) 
+### Logistic Regression Model (LR) 
 Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, standard scalers were applied to all predictors to ensure that LR model would not be negatively impacted by different predictor's scale having a greater influence on the model (namely customer balance). 
 
 ## Refinement 
