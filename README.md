@@ -229,14 +229,9 @@ Meaning about 38.3% of the customers predicted as churned actually churned throu
 #### Recall = 0.718
 So the model identified only about 71.8% of all churned customers, so still poor.
 <br></br>
-Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment to try and further refine the LR model was to simply use more predictor features from the dataset.
+Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance 
 
-Accuracy: 0.702
-Confusion Matrix:
-[[1660  719]
- [ 175  446]]
-Precision: 0.3828326180257511
-Recall: 0.7181964573268921
+### Random Forest Model (RF) 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
