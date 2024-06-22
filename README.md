@@ -258,7 +258,10 @@ Utilise the insights gained from the model to develop data-driven customer reten
 Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviors or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
 
 # Future improvements/Lessons Learnt
-- 
+- For future analysis, feature engineering such as 'tenure * balance' may provide additonal insight or model refinement for future analysis.
+- Understand the application of Precitive Models/Machine Learning Algorithms before using them in predictive analysis.
+- More applicable models such as the Extreme Gradient Boosting algorithm may provide more valuable insight given problem statement to identify feature importance.
+- The focus of customers with/without a credit card was lost during predictive analysis.
 
 # Appendix 
 ### **Sample of dataset Used:**
