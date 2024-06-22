@@ -181,7 +181,6 @@ To try and combat this, it was decided that a threshold of 0.5 would be used for
 #### FN: 566 cases were incorrectly predicted as not churned (Type II error).
 #### TP: 55 cases were correctly predicted as churned.
 <br></br>
-
 Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calcuated.
 #### Precision = TP / (TP + FP) = 55 / (55 + 46) ≈ 0.544
 Meaning about 54.4% of the customers predicted as churned actually churned through model predictions.
