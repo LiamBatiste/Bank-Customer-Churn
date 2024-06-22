@@ -38,8 +38,10 @@ The predictor of age within the dataset has a median of 38.9 years, with 50% of 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/5fdfa64d-ac2b-47ca-9497-ee3880e49bdc)
 
 Very Even distribution of a estimated salary count for customers, This could indicate wide target audience. 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d51f07c6-a48f-46ca-8b02-120ddfe26b0f)
 
 Mean balance of $76,485, could be interpreted both positively or negatively. The Bank does on one hand have increased Liquidity for investing and lending and potential high customer retention. However, this could also mean higher interest expenses and idle funds. 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/58e9f0d0-e23f-49bb-82de-ad0f9b261d7a)
 
 When also considering that a higher number of customers are inactive then active, this could point towards the more negative implications of high average customer balance being true (though the figures are not too dissimilar). 
 
