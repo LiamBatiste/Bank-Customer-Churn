@@ -97,11 +97,11 @@ After further analysis, there appears to be a higher number of customers who hav
 A higher chance of churn can be observed for active members of the bank. This in fact is common amongst different industries, given that the inactive members are sometime treated by businesses as 'idle' and so simply do not engage with their bank, obviously this is not always the case. Rather the banks active customers may have higher expectations and therefore if their expectations as a customer are not met, they may look elsewhere for investment/lending opportunities. Other factors may also be at play, such as service fatigue or simply the changing needs of the customer as their financial situation changes over time. It should be in the banks interest to adapt policy and targeted strategies to retain more active customers however, to increase opportunities to upsell products to said customer base. 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/cbcd8f3d-9faf-4f7f-a57e-1e3c89c88b60)
 
-##### After 'drilling down' more deeply into key predictors (based off correlation coefficients). Greater insight into these proposed key predictors with respect to customer churn has been obtained. It has therefore been deemed appropriate to perform some final exploration into these predictors, with a focus on customer who do/do not own a credit card with the bank: 
+### After 'drilling down' more deeply into key predictors (based off correlation coefficients). Greater insight into these proposed key predictors with respect to customer churn has been obtained. It has therefore been deemed appropriate to perform some final exploration into these predictors, with a focus on customer who do/do not own a credit card with the bank: 
 
-##### - Exploration of Age and Churn by Credit Card Status
-##### - Exploration of Balance and Churn by Credit Card Status
-##### - Exploration of Active Member Status and Churn by Credit Card Status
+### - Exploration of Age and Churn by Credit Card Status
+### - Exploration of Balance and Churn by Credit Card Status
+### - Exploration of Active Member Status and Churn by Credit Card Status
 
 # Predictive Modeling
 Approach
