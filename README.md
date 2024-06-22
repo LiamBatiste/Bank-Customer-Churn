@@ -27,7 +27,7 @@ The features of the dataset were ranked corrleation-wise using Pearson Correlati
 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357)
 
-Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data. A greater focus for analysis was given to the fields which showed a higher correlation wit the target variable of churn, which were as follows: 
+Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomolyu detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation wit the target variable of churn, which were as follows: 
 - 
 
 ## Key Findings
