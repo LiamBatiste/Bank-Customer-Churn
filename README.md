@@ -284,4 +284,10 @@ Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/96aada6b-6869-4328-95c8-b4a75a733eae)
 ---
 
+**Logistic Regression performance metrics following class weight balancing and increased inputs/features:**
+<br></br>
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/f686f053-e80f-4b47-a77f-f7470f3f7d7f)
+---
+
+
 
