@@ -97,10 +97,12 @@ When taking a more focused approach to the predictor of age, there is a clear ne
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/c804a14d-72c1-4b5b-b7cd-d34de744e273)
 
 ## Refined Exploration - Balance 
+
 After further analysis, there appears to be a higher number of customers who have been retained by the bank who would be deemed 'small depositors'/'debtor Customers' than those who have churned. The opposite can be observed for the 'large depositors', whereby more have churned than have been retained. This could be due to many factors, such as customer behaviour/needs as a result of their standings as a depositor, the banks customer retention strategies, the bank's perceived risk of customers given their financial standing or Economic factors related to current market conditions such as interest rates or overall economic uncertainty.
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/6eda79dd-c7f1-478a-8d8b-8a5880757d62)
 
 ## Refined Exploration - Active/Inactive Members
+
 A higher chance of churn can be observed for active members of the bank. This in fact is common amongst different industries, given that the inactive members are sometime treated by businesses as 'idle' and so simply do not engage with their bank, obviously this is not always the case. Rather the banks active customers may have higher expectations and therefore if their expectations as a customer are not met, they may look elsewhere for investment/lending opportunities. Other factors may also be at play, such as service fatigue or simply the changing needs of the customer as their financial situation changes over time. It should be in the banks interest to adapt policy and targeted strategies to retain more active customers however, to increase opportunities to upsell products to said customer base. 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/cbcd8f3d-9faf-4f7f-a57e-1e3c89c88b60)
 
