@@ -229,9 +229,10 @@ Meaning about 38.3% of the customers predicted as churned actually churned throu
 #### Recall = 0.718
 So the model identified only about 71.8% of all churned customers, so still poor.
 <br></br>
-Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance 
+Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance. Therefore alternative predictive models were considered.
 ***
 ### Random Forest Model (RF) 
+When fitting the dataset to the RF model when comparing training (0.999) and test (0.854) scores a large difference of 14.5% was observed, this would suggest possible overfitting towards the training dataset's noise and outliers and so may not generalise well to unseen datasets. To avoid this, 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
