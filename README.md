@@ -27,11 +27,44 @@ The features of the dataset were ranked corrleation-wise using Pearson Correlati
 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357)
 
-Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomolyu detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation wit the target variable of churn, which were as follows: 
-- 
+Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomoly detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation with the target variable of churn, which were as follows: 
 
-## Key Findings
-Summarize the key insights gained during data exploration, such as distributions of variables, correlations, and initial observations.
+- age (ρ = 0.29) - as age increases, so does the rate of churn
+- active member (-0.16) - higher churn rate amongst active customers
+- balance (ρ = 0.12) - as balance increases, so does the rate of churn
+
+# Preliminary Explorative Insights
+The predictor of age within the dataset has a median of 38.9 years, with 50% of data points between 32 (Q1) and 44 years (Q3), however there may be many outliers for customer age within the dataset. 
+
+Very Even distribution of a estimated salary count for customers, This could indicate wide target audience. 
+
+Mean balance of $76,485, could be interpreted both positively or negatively. The Bank does on one hand have increased Liquidity for investing and lending and potential high customer retention. However, this could also mean higher interest expenses and idle funds. 
+
+When also considering that a higher number of customers are inactive then active, this could point towards the more negative implications of high average customer balance being true (though the figures are not too dissimilar). 
+
+The credit scores of customers displays a mean of 650.5. Given the capital within the current dataset is in USD, the credit scores will be interpreted using the United States FICO Scoring System.
+
+FICO Bracket Interpretations (ranges from 300 to 850):
+***
+###### Excellent: 800 to 850
+***
+###### Very Good: 740 to 799
+***
+###### Good: 670 to 739
+***
+###### Fair: 580 to 669
+***
+###### Poor: 300 to 579
+***
+
+Thus the majority of customers within the dataset are of 'fair' credit scores. Conversely, There is also some clear outliers within the dataset that fall into the 'Poor' bracket. This could be an indication of a business imitative proposed by the bank such as subprime lending or a credit repair programme. When observing a Histogram distribution, negative skew can be seen, which is less indicative of the former mentioned initiatives.
+
+Customer tenure appears normally distributed, with a mean of 5.01 years. 
+
+The number of products utilised by customers sits on average at around 1 (with up to 4 products being on offer). When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
+
+When looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
+Further, there is clearly a much higher number of customers within the dataset who have a credit card, and so indicates that it is a popular product with the current bank being analysed and could provide opportunity to upsell other products given that customers appear receptive to such products. Thus, this predictor may be an area which I focus on more heavily, despite the aforementioned negligible negative Pearson correlation score. 
 
 ## Insights for Action
 Highlight actionable insights derived from the data exploration phase, focusing on factors influencing churn and potential strategies for retention.
