@@ -236,7 +236,9 @@ When fitting the dataset to the RF model when comparing training (0.999) and tes
 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/648b2b7b-021b-4687-ac40-843f80d2afdc)
 
-This would allow insight into the 
+This would further optimise the model with respect to test accuracy, which outperformed all previously mention models, with a test accuracy of **0.860, meaning the model predicted churn correctly for 86% of the test data**. There appears to be Potential for this Model to be used in production by Bank and provide real-time data through a data pipeline, to further refine model over time for improved prediction of Customer churn. This could be used for reporting to observe shifts in the predictors that predominantly contribute customer churn rate. Ultimately the Bank could adjust their strategies and interventions to combat customer churn and provide value through increased customer retention.
+
+Feature importance for the 
 
 
 ## Best Model 
