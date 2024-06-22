@@ -212,7 +212,31 @@ Meaning about 58.7% of the customers predicted as churned actually churned throu
 So the model identified only about 17.2% of all churned customers, so still poor.
 <br></br>
 
-Clearly, the LR model still was not effectively identifying specifically customers who have churned. This is concerning and needed to be further refined to minimise this recall error as it was essential for the Bank. Further, class weight was balanced to avoid the minority class of churning being underpredicted by the model to try and improve the evident high number of customers predicted to have not churn, when the opposite was true. After this adjustment to the LR model, the following performance measures were observed. 
+Clearly, the LR model still was not effectively identifying specifically customers who have churned. This is concerning and needed to be further refined to minimise this recall error as it was essential for the Bank. Further, class weight was balanced to avoid the minority class of churning being underpredicted by the model to try and improve the evident high number of customers predicted to have not churn, when the opposite was true. After this adjustment to the LR model, the following performance measures were observed: 
+
+#### Accuracy Score: 0.70 (2 d.p.)
+Meaning the model predicted customer churn correctly approximately 70% of test data. 
+
+#### TN: 1660 cases were correctly predicted as not churned
+#### FP: 719 cases were incorrectly predicted as churned (Type I error)
+#### FN: 175 cases were incorrectly predicted as not churned (Type II error)
+#### TP: 446 cases were correctly predicted as churned
+
+#### Precision ≈ 0.383
+Meaning about 38.3% of the customers predicted as churned actually churned through model predictions.
+<br></br>
+
+#### Recall = 0.718
+So the model identified only about 71.8% of all churned customers, so still poor.
+<br></br>
+Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment to try and further refine the LR model was to simply use more predictor features from the dataset.
+
+Accuracy: 0.702
+Confusion Matrix:
+[[1660  719]
+ [ 175  446]]
+Precision: 0.3828326180257511
+Recall: 0.7181964573268921
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
