@@ -39,19 +39,19 @@ Descriptive statistics for each field were obtained along with data distribution
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/fc28ebc1-825c-428e-801b-84df906ddba8)
 
 **Salary** - Very Even distribution of a estimated salary count for customers, This could indicate wide target audience. 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d51f07c6-a48f-46ca-8b02-120ddfe26b0f)
 
 **Balance** - Mean balance of $76,485, could be interpreted both positively or negatively. The Bank does on one hand have increased Liquidity for investing and lending and potential high customer retention. However, this could also mean higher interest expenses and idle funds. 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/58e9f0d0-e23f-49bb-82de-ad0f9b261d7a)
 
 **Customer Activity** - When also considering that a higher number of customers are inactive then active, this could point towards the more negative implications of high average customer balance being true (though the figures are not too dissimilar). 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/33300922-e845-496a-8035-11de3679368b)
 
 **Credit Score** - The credit scores of customers displays a mean of 650.5. Given the capital within the current dataset is in USD, the credit scores will be interpreted using the United States FICO Scoring System.
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9eb5e982-f380-45ff-8c72-880fde8c024b)
 
 FICO Bracket Interpretations (ranges from 300 to 850):
@@ -70,15 +70,15 @@ FICO Bracket Interpretations (ranges from 300 to 850):
 Thus the majority of customers within the dataset are of 'fair' credit scores. Conversely, There is also some clear outliers within the dataset that fall into the 'Poor' bracket. This could be an indication of a business imitative proposed by the bank such as subprime lending or a credit repair programme. When observing a Histogram distribution, negative skew can be seen, which is less indicative of the former mentioned initiatives.
 
 **Tenure** - Customer tenure appears normally distributed, with a mean of 5.01 years. 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/ab416614-b46c-491e-875a-91229c4a2710)
 
 **Products Number** - The number of products utilised by customers sits on average at around 1 (with up to 4 products being on offer). 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d43b8e0c-3d06-4d6e-af19-e9d5ceed8bfe)
 
 **Credt card** - When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
-<br>
+<br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/4477aa62-4c14-42ed-846e-4473210d1229)
 
 After looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
