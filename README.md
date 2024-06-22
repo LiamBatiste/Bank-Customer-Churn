@@ -1,7 +1,11 @@
-# Project Index
-## Project Summary 
-## Data exploration 
-## Preliminary Explorative Insights
+# Table of Contents
+- [Project Summary](#project-summary)
+- [Data Exploration](#data-exploration)
+- [Preliminary Explorative Insights](#preliminary-explorative-insights)
+- [Predictive Modeling](#predictive-modeling)
+- [Actionable Recommendations](#actionable-recommendations)
+- [Future Improvements/Lessons Learnt](#future-improvementslessons-learnt)
+- [Appendix](#appendix)
 
 # Project Summary
 ## Introduction
