@@ -258,6 +258,8 @@ Utilise the insights gained from the model to develop data-driven customer reten
 Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviors or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
 
 # Appendix 
-Include any additional details, code snippets, or visualizations that support your findings but weren't included in the main sections.
+Sample of dataset Used: 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/b388d08c-ce77-4485-a3e0-c3ee9c0bb3c8)
+
 
 
