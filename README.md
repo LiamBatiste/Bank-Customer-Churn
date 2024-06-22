@@ -65,8 +65,11 @@ FICO Bracket Interpretations (ranges from 300 to 850):
 Thus the majority of customers within the dataset are of 'fair' credit scores. Conversely, There is also some clear outliers within the dataset that fall into the 'Poor' bracket. This could be an indication of a business imitative proposed by the bank such as subprime lending or a credit repair programme. When observing a Histogram distribution, negative skew can be seen, which is less indicative of the former mentioned initiatives.
 
 Customer tenure appears normally distributed, with a mean of 5.01 years. 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/aba91140-b2b6-4c1a-99e8-9355f874e6b7)
 
 The number of products utilised by customers sits on average at around 1 (with up to 4 products being on offer). When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d43b8e0c-3d06-4d6e-af19-e9d5ceed8bfe)
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/4477aa62-4c14-42ed-846e-4473210d1229)
 
 When looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
 Further, there is clearly a much higher number of customers within the dataset who have a credit card, and so indicates that it is a popular product with the current bank being analysed and could provide opportunity to upsell other products given that customers appear receptive to such products. Thus, this predictor may be an area which I focus on more heavily, despite the aforementioned negligible negative Pearson correlation score. 
@@ -75,7 +78,7 @@ Possible anomolous data was only observed for the age variable and porducts numb
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9475936b-60cd-4060-8a02-bf7cab508b3f)
 
-The anomolous data for both fields was included in all subsequent analysis techniques, given the outliers from the each filed were explained by a lower count of elderly customers or customers utilising the maximum number of products provided from the Bank.
+After further consideration, the anomolous data for both fields was included in all subsequent analysis techniques, given the outliers from the each filed were explained by a lower count of elderly customers or customers utilising the maximum number of products provided from the Bank.
 
 # Predictive Modeling
 Approach
