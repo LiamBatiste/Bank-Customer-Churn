@@ -294,3 +294,8 @@ Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/25142330-7c0b-40b8-81a7-c761ede369a7)
 ---
 
+ **Feature importance using Random Forest Model:**
+<br></br>
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/ac8b672a-ad4b-482b-91d6-fc9fdac5c52a)
+---
+
