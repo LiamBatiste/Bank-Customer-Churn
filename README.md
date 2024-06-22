@@ -93,6 +93,7 @@ After further consideration, the anomolous data for both fields was included in 
 ### In summary when examining the correlation heatmap, it seems of benefit to isolate variables such as age, balance, and customer activity status concerning customer churn. This focused analysis aims to gain insight into any underlying trends or patterns that may exist within these specific predictors in relation to churn propensity. Whether the customer has a credit card should also be explored further to help solve the proposed problem statement (possibly in tandem with the higher correlators mentioned). 
 
 ## Refined Exploration - Age 
+
 When taking a more focused approach to the predictor of age, there is a clear negative skew for the 'likelihood' of churn, as customers approach 'older age' (with a median age of 56 for the highest likelihood of customer churn). Further, the increase of customer churn appears to begin around the age of 39 and tapers off around 71 (although the later may be due to a lack of data points for these ages resulting in misleading insights).
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/c804a14d-72c1-4b5b-b7cd-d34de744e273)
 
