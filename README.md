@@ -5,7 +5,7 @@ Exploration and Predictive Modelling these insights can be leveraged to lower ra
 
 The dataset provided for this Analysis has been taken from Kaggle - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset. This dataset cotains the following fields: 
 
-#### - customer_id, unused variable.
+- customer_id, unused variable.
 - credit_score, used as input.
 - country, used as input.
 - gender, used as input.
