@@ -34,7 +34,7 @@ Descriptive statistics for each field were obtained along with data distribution
 - balance (ρ = 0.12) - as balance increases, so does the rate of churn
 
 # Preliminary Explorative Insights
-The predictor of age within the dataset has a median of 38.9 years, with 50% of data points between 32 (Q1) and 44 years (Q3), however there may be many outliers for customer age within the dataset. 
+**Age** - The predictor of age within the dataset has a median of 38.9 years, with 50% of data points between 32 (Q1) and 44 years (Q3), however there may be many outliers for customer age within the dataset. 
 <br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/fc28ebc1-825c-428e-801b-84df906ddba8)
 
