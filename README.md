@@ -2,7 +2,7 @@
 - [Project Summary](#project-summary)
 - [Data Exploration](#data-exploration)
 - [Preliminary Explorative Insights](#preliminary-explorative-insights)
-- [Predictive Modeling](#predictive-modeling)
+- [Predictive Modelling](#predictive-modelling)
 - [Actionable Recommendations](#actionable-recommendations)
 - [Future Improvements/Lessons Learnt](#future-improvementslessons-learnt)
 - [Appendix](#appendix)
@@ -165,7 +165,7 @@ There appears to be a slightly higher churn rate for credit card customers who a
 
 To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken and if the model does not capture the complexity of the dataset, other models will be considered. This may help in understanding the underlying drivers of churn behavior specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
 
-# Predictive Modeling
+# Predictive Modelling
 ## Introduction
 
 It is important that the training variables used within the model as those which likely have impact on customer churn, such as; age, gender, member activity, balance and credit card (given the problem statement). Additionally, it is important to avoid multicollinearity issues due to predictors used within the model correlating highly with other predictors. Hence the exclusion of product number from this analysis, given it's medium negative correlation score with products number (-0.30).
