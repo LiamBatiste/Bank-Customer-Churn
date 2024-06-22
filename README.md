@@ -132,7 +132,7 @@ There can be an observed set of spikes in churn rate for non-holders for the age
 
 <br>
 
-##### From observation, the customer density order for 'small depositors' appears as follows:
+#### From observation, the customer density order for 'small depositors' appears as follows:
 ***
 1.) Retained and Credit Card holders
 ***
@@ -144,7 +144,7 @@ There can be an observed set of spikes in churn rate for non-holders for the age
 
 <br>
 
-##### From observation, the customer density order for 'large depositors' appears as follows:
+#### From observation, the customer density order for 'large depositors' appears as follows:
 ***
 1.) Churned and Credit Card holders
 ***
