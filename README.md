@@ -147,7 +147,14 @@ There can be an observed set of spikes in churn rate for non-holders for the age
 
 It appears that there is a higher density of retained small depositor customers, both with and without credit cards. Conversely, a higher density of large deposit customers, both with and without credit cards, are churning rather than being retained by the bank. This could be due to a greater focus by the bank on smaller depositors. The retention of small deposit customers suggests that the availability of credit cards has been an effective retention tool. On the other hand, the high churn of large depositors may not be a significant concern, as these customers are likely less reliant on credit cards as a source of capital, which could explain the higher density of churn among this customer segment. Overall, further analysis through predictive modelling using Multivariate Regression Analysis will help gain more insights for identifying customers at risk of churning.
 
+## Concluding Examinations of Churn Rate - Balance and Credit Cards:
+There appears to be a slightly higher churn rate for credit card customers who are active with the bank. When looking at inactive customers,  there is a large difference between the higher churn rate for customers who do not have a credit card compared to those who do. Overall it seems that the credit card may hold some influence on customer retention for inactive members. It would be of use to the bank to obtain greater customer segmentation insight so that expectations can be met for active members with a credit card to improve retention rates. This might be achieved through more personalised customers offerings, to increased percieved customer choice/bespoke features associated with the credit card. Lastly, it would be of use to the bank to perform further segmentation analysis to validate these findings. 
 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/6b7fd1c3-e237-4fe5-9491-4ce62da5bbc0)
+
+### Next Steps:
+
+### To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken. This may help in understanding the underlying drivers of churn behavior specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
 
 # Predictive Modeling
 Approach
