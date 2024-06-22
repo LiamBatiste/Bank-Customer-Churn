@@ -240,14 +240,22 @@ This would further optimise the model with respect to test accuracy, which outpe
 
 Feature importance was lastly analysed using the best performing RF model to gain understanding into what features of the dataset are most influential with respect to churn and were as follows: 
 <br>
+
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/7b1203b3-3aea-4592-b8e1-3705b122f075)
 
 
-## Best Model 
-Detail the best-performing model selected based on evaluation metrics, such as test accuracy and other relevant metrics.
-
 # Actionable Recommendations 
-Summarize the actionable recommendations derived from the predictive modeling results, emphasizing strategies to reduce customer churn based on the insights gained.
+1. Focus on High-Impact Customer Segments:
+Based on the model's feature importance analysis, age, products number, balance, and credit score are the most influential factors contributing to customer churn. The bank should prioritize retaining older customers who hold credit cards, especially during their retirement years when churn rates tend to increase. Implementing targeted incentivized reward packages such as travel or health and wellness benefits could effectively retain this demographic.It should be noted that some of the statistical important can be explained by accounts being closed due to the customer becoming deceased. Despite this it should still be prioritised as an area of focus fo the Bank.
+
+2. Leverage Product Offerings for Upselling:
+The Random Forest model highlights products as a significant driver of customer responsiveness. To capitalise on this finding, the bank should actively promote its product offerings to increase upselling opportunities and enhance customer retention. Tailoring these products through further segmentation and demographic analysis can amplify their appeal and impact on the bank's customer base.
+
+3. Implement Data-Driven Customer Retention Strategies:
+Utilise the insights gained from the model to develop data-driven customer retention strategies. This includes leveraging predictive analytics to proactively identify at-risk customers and personalize retention initiatives. By deploying targeted campaigns and personalized offers based on customer behaviors and preferences, the bank can mitigate churn effectively.
+
+4. Monitor and Adapt Strategies Over Time:
+Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviors or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
 
 # Appendix 
 Include any additional details, code snippets, or visualizations that support your findings but weren't included in the main sections.
