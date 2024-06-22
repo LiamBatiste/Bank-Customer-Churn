@@ -171,7 +171,6 @@ The objective of this Model is to use the following variables as part of <b>Mult
 The primary model of choice was Multivariate Linear Regression, given it's ability to facilitate the analysis that the impact of several predictors has on the target variable simultaneously. This might therefore be useful for predicting the likelihood/rate of a customer churning. Additionally it could potentially be used to quantify the contribution each predictor variable has towards customer churn with the Bank.
 
 ## Model Performance
-Discuss the performance of each model tested, including accuracy metrics (e.g., accuracy, precision, recall, F1-score) and any challenges encountered.
 #### Multivariate Linear Regression model (MLR) 
 Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead suited for continous target variables. 
 
@@ -182,7 +181,18 @@ To try and combat this, it was decided that a threshold of 0.5 would be used for
 #### FN: 566 cases were incorrectly predicted as not churned (Type II error).
 #### TP: 55 cases were correctly predicted as churned.
 
+Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calcuated.
 #### Precision = TP / (TP + FP) = 55 / (55 + 46) ≈ 0.544
+Meaning about 54.4% of the customers predicted as churned actually churned through model predictions.
+
+Recall (Sensitivity): Recall measures how many of the actual positive cases (churned) were predicted correctly.
+#### Recall = TP / (TP + FN) = 55 / (55 + 566) ≈ 0.088
+So the model identified only about 8.8% of all churned customers.
+
+Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
+
+#### Logistic Regression Model (LR) 
+Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
