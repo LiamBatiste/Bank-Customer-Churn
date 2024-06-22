@@ -1,3 +1,8 @@
+# Project Index
+## Project Summary 
+## Data exploration 
+## Preliminary Explorative Insights
+
 # Project Summary
 ## Introduction
 A Bank has outsourced an already cleansed dataset, in hope that actionable insights can be gained to reduce customer churn within their company, particularly among credit card holders. By analysing the uncovered most influential factors of custoemr churn through Data
