@@ -71,7 +71,7 @@ Thus the majority of customers within the dataset are of 'fair' credit scores. C
 
 Customer tenure appears normally distributed, with a mean of 5.01 years. 
 <br>
-![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/aba91140-b2b6-4c1a-99e8-9355f874e6b7)
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/5720cebc-e930-4335-9fe9-09008f0f356d)
 
 The number of products utilised by customers sits on average at around 1 (with up to 4 products being on offer). 
 <br>
