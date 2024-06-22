@@ -176,10 +176,10 @@ Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was ob
 
 To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, a confusion matrix and aaccuracy scores were instead used to gain a deeper understanding of the; true negatives (TN), false positives (FP), false negatives (FN) and true positives (TP) which were as such: 
 
-#### TN: 2333 cases were correctly predicted as not churned.
-#### FP: 46 cases were incorrectly predicted as churned (Type I error).
-#### FN: 566 cases were incorrectly predicted as not churned (Type II error).
-#### TP: 55 cases were correctly predicted as churned.
+#### TN: 2333 cases were correctly predicted as not churned
+#### FP: 46 cases were incorrectly predicted as churned (Type I error)
+#### FN: 566 cases were incorrectly predicted as not churned (Type II error)
+#### TP: 55 cases were correctly predicted as churned
 <br></br>
 Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calcuated.
 #### Precision = TP / (TP + FP) = 55 / (55 + 46) ≈ 0.544
@@ -194,7 +194,25 @@ So the model identified only about 8.8% of all churned customers.
 Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
 ***
 ### Logistic Regression Model (LR) 
-Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, standard scalers were applied to all predictors to ensure that LR model would not be negatively impacted by different predictor's scale having a greater influence on the model (namely customer balance). 
+Therefore with respect to the MLR model, it was decided that a new approach through the Logistic Regression Model. This was justified by it's ability to be applied to binary target variables such as churn. In order for this to be possible however, all predictors were one-hot encoded through dummy variable fields of any categorical predictors. Secondly, standard scalers were applied to all predictors to ensure that LR model would not be negatively impacted by different predictor's scale having a greater influence on the model (namely customer balance). The following model performance was recorded: 
+
+#### Accuracy Score: 0.80 (2 d.p.)
+Meaning the model predicted customer churn correctly approximately 80% of test data. 
+
+#### TN: 2304 cases were correctly predicted as not churned
+#### FP: 75 cases were incorrectly predicted as churned (Type I error)
+#### FN: 514 cases were incorrectly predicted as not churned (Type II error)
+#### TP: 107 cases were correctly predicted as churned
+
+#### Precision ≈ 0.587
+Meaning about 58.7% of the customers predicted as churned actually churned through model predictions.
+<br></br>
+
+#### Recall = 0.172
+So the model identified only about 17.2% of all churned customers, so still poor.
+<br></br>
+
+Clearly, the LR model still was not effectively identifying specifically customers who have churned. This is concerning and needed to be further refined to minimise this recall error as it was essential for the Bank. Further, class weight was balanced to avoid the minority class of churning being underpredicted by the model to try and improve the evident high number of customers predicted to have not churn, when the opposite was true. After this adjustment to the LR model, the following performance measures were observed. 
 
 ## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
