@@ -1,3 +1,199 @@
+Here's the corrected and formatted version of your document:
+
+---
+
+# Table of Contents
+- [Project Summary](#project-summary)
+- [Data Exploration](#data-exploration)
+- [Preliminary Explorative Insights](#preliminary-explorative-insights)
+- [Predictive Modeling](#predictive-modeling)
+- [Actionable Recommendations](#actionable-recommendations)
+- [Future Improvements/Lessons Learnt](#future-improvementslessons-learnt)
+- [Appendix](#appendix)
+
+# Project Summary
+
+## Introduction
+A Bank has outsourced an already cleansed dataset, in hopes that actionable insights can be gained to reduce customer churn within their company, particularly among credit card holders. By analyzing the most influential factors of customer churn through Data Exploration and Predictive Modeling, these insights can be leveraged to lower churn rates for the Bank.
+
+The dataset provided for this analysis has been sourced from Kaggle - [Bank Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset). The dataset includes the following fields:
+
+- customer_id (unused variable)
+- credit_score (used as input)
+- country (used as input)
+- gender (used as input)
+- age (used as input)
+- tenure (used as input)
+- balance (used as input)
+- products_number (used as input)
+- credit_card (used as input)
+- active_member (used as input)
+- estimated_salary (used as input)
+- churn (target variable: 1 if the client has left the bank during a certain period, 0 if not)
+
+# Data Exploration
+
+## Overview
+The dataset contained 1000 entries with no null data across the 12 fields. Data types were correctly assigned for all fields.
+
+The features were analyzed using Pearson Correlation Coefficients, and all fields were compared using a correlation matrix:
+
+![Correlation Matrix](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357.png)
+
+Descriptive statistics and data distribution were examined for each field to understand the data better and determine the need for anomaly detection and removal. Higher correlation with the target variable (churn) focused the analysis on:
+
+- age (ρ = 0.29): Churn increases with age.
+- active_member (ρ = -0.16): Higher churn among active customers.
+- balance (ρ = 0.12): Churn increases with balance.
+
+# Preliminary Explorative Insights
+
+### Age
+The median age in the dataset is 38.9 years, with 50% of data points between 32 (Q1) and 44 years (Q3). Outliers for customer age were observed.
+
+![Age Distribution](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/fc28ebc1-825c-428e-801b-84df906ddba8.png)
+
+### Salary
+The distribution of estimated salary among customers shows even distribution, indicating a wide target audience.
+
+![Salary Distribution](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d51f07c6-a48f-46ca-8b02-120ddfe26b0f.png)
+
+### Balance
+The mean balance is $76,485, suggesting both positive (increased liquidity) and negative (higher interest expenses) implications for the Bank.
+
+![Balance Distribution](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/58e9f0d0-e23f-49bb-82de-ad0f9b261d7a.png)
+
+### Customer Activity
+There are more inactive customers compared to active ones, potentially affecting churn rates.
+
+![Customer Activity](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/33300922-e845-496a-8035-11de3679368b.png)
+
+## Refined Exploration - Age
+Further analysis reveals a negative skew in churn likelihood as customers age.
+
+![Age and Churn](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/c804a14d-72c1-4b5b-b7cd-d34de744e273.png)
+
+## Refined Exploration - Balance
+Churn rates differ between small and large depositors, indicating various factors influencing customer behavior.
+
+![Balance and Churn](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/6eda79dd-c7f1-478a-8d8b-8a5880757d62.png)
+
+## Refined Exploration - Active/Inactive Members
+Active members show a higher churn rate, suggesting the need for tailored retention strategies.
+
+![Active Members and Churn](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/cbcd8f3d-9faf-4f7f-a57e-1e3c89c88b60.png)
+
+### Next Steps
+
+Further analysis will focus on the impact of credit card ownership on churn rates, particularly among active customers.
+
+# Predictive Modeling
+
+## Introduction
+
+Predictive modeling will use variables such as age, gender, member activity, balance, and credit card presence to predict churn. Product number was excluded due to medium negative correlation (-0.30).
+
+The objective is to predict churn using Multivariate Regression Analysis:
+
+- Gender
+- Age
+- Member Activity
+- Balance
+- Credit Card
+
+## Model Performance
+
+### Multivariate Linear Regression Model (MLR)
+MLR resulted in an r-Squared score of 0.13, indicating poor performance due to categorical target variable. A threshold of 0.5 was used for binary classification:
+
+- True Negatives (TN): 2333
+- False Positives (FP): 46
+- False Negatives (FN): 566
+- True Positives (TP): 55
+
+Precision: 0.544, Recall: 0.088
+
+### Logistic Regression Model (LR)
+LR improved with an accuracy score of 0.80, but recall was low. Class weight balancing was applied:
+
+- Precision: 0.587, Recall: 0.172
+
+Further refinement was needed for better performance.
+
+### Random Forest Model (RF)
+RF outperformed with a test accuracy of 0.860 after hyperparameter tuning, indicating potential for production use.
+
+Feature importance:
+
+![Feature Importance](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/7b1203b3-3aea-4592-b8e1-3705b122f075.png)
+
+# Actionable Recommendations
+
+1. **Focus on High-Impact Customer Segments:** Prioritize older credit card holders for retention strategies.
+   
+2. **Leverage Product Offerings for Upselling:** Promote products to increase customer retention.
+   
+3. **Implement Data-Driven Customer Retention Strategies:** Use predictive analytics for personalized retention initiatives.
+
+4. **Monitor and Adapt Strategies Over Time:** Refine strategies based on real-time data and predictive modeling.
+
+# Future Improvements/Lessons Learnt
+
+- **Feature Engineering:** Consider additional features like 'tenure * balance'.
+- **Model Selection:** Choose models appropriate for categorical target variables.
+- **Advanced Models:** Explore algorithms like Extreme Gradient Boosting.
+- **Segmentation Analysis:** Focus on customers with and without credit cards consistently.
+
+# Appendix
+
+**Sample of Dataset Used:**
+
+![Dataset Sample](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/b388d08c-ce77-4485-a3e0-c3ee9c0bb3c8.png)
+
+**Dataset Shape:**
+
+![Dataset Shape](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/140aa6b8-79b0-4af9-8310-744f24fdd4d1.png)
+
+**Multivariate Linear Regression r2 Output:**
+
+![MLR r2 Output](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/44c6ac81-e5e9-479d-b542-23e78bc3939c.png)
+
+**Logistic Regression Performance Metrics:**
+
+![LR Performance Metrics](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9b6682ce-0e16-4aec-aeaa-82593fa6bb49.png)
+
+**Logistic Regression Performance Metrics (Class Weight Balancing):**
+
+![LR Performance Metrics Balanced](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/96aada6b-6869-4328-95c8-b4a75a733eae.png)
+
+**Random Forest Model Performance (Best):**
+
+![RF Model Performance](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/25142330-7c0b-40b8-81a7-c761ede369a7.png)
+
+**Feature Importance Using Random Forest Model:**
+
+![RF Feature Importance](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/ac8b672a-ad4b-482b-91d6-fc9fdac5c52a.png)
+
+---
+
+This revised version addresses spelling corrections and maintains consistency throughout.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Table of Contents
 - [Project Summary](#project-summary)
 - [Data Exploration](#data-exploration)
