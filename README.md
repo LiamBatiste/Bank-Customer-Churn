@@ -44,8 +44,10 @@ Mean balance of $76,485, could be interpreted both positively or negatively. The
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/58e9f0d0-e23f-49bb-82de-ad0f9b261d7a)
 
 When also considering that a higher number of customers are inactive then active, this could point towards the more negative implications of high average customer balance being true (though the figures are not too dissimilar). 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/33300922-e845-496a-8035-11de3679368b)
 
 The credit scores of customers displays a mean of 650.5. Given the capital within the current dataset is in USD, the credit scores will be interpreted using the United States FICO Scoring System.
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9eb5e982-f380-45ff-8c72-880fde8c024b)
 
 FICO Bracket Interpretations (ranges from 300 to 850):
 ***
