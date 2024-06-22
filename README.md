@@ -71,6 +71,7 @@ The number of products utilised by customers sits on average at around 1 (with u
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d43b8e0c-3d06-4d6e-af19-e9d5ceed8bfe)
 
 When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
+
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/4477aa62-4c14-42ed-846e-4473210d1229)
 
 When looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
