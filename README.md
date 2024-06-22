@@ -66,6 +66,10 @@ The number of products utilised by customers sits on average at around 1 (with u
 When looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
 Further, there is clearly a much higher number of customers within the dataset who have a credit card, and so indicates that it is a popular product with the current bank being analysed and could provide opportunity to upsell other products given that customers appear receptive to such products. Thus, this predictor may be an area which I focus on more heavily, despite the aforementioned negligible negative Pearson correlation score. 
 
+Possible anomolous data was only observed for the age variable and porducts number of the customer. Anomolous data was determined as follows: 
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/1aa3cd41-2542-48c5-9e6f-aca565e56954)
+
+
 # Predictive Modeling
 Approach
 Describe the modeling approach taken, including the types of models tested (e.g., linear regression, logistic regression, random forest), and preprocessing steps (e.g., scaling, feature engineering).
