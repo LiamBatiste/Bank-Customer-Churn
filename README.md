@@ -70,7 +70,7 @@ Possible anomolous data was only observed for the age variable and porducts numb
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9475936b-60cd-4060-8a02-bf7cab508b3f)
 
-The anomolous data for both fields was included in all subqequent analysis techniques.
+The anomolous data for both fields was included in all subsequent analysis techniques, given the outliers from the each filed were explained by a lower count of elderly customers or customers utilising the maximum number of products provided from the Bank.
 
 # Predictive Modeling
 Approach
