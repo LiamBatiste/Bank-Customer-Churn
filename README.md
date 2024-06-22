@@ -180,14 +180,17 @@ To try and combat this, it was decided that a threshold of 0.5 would be used for
 #### FP: 46 cases were incorrectly predicted as churned (Type I error).
 #### FN: 566 cases were incorrectly predicted as not churned (Type II error).
 #### TP: 55 cases were correctly predicted as churned.
+<br>
 
 Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calcuated.
 #### Precision = TP / (TP + FP) = 55 / (55 + 46) ≈ 0.544
 Meaning about 54.4% of the customers predicted as churned actually churned through model predictions.
+<br> 
 
 Recall (Sensitivity): Recall measures how many of the actual positive cases (churned) were predicted correctly.
 #### Recall = TP / (TP + FN) = 55 / (55 + 566) ≈ 0.088
 So the model identified only about 8.8% of all churned customers.
+<br>
 
 Clearly this model was not effective at predicting churn, so a better model for predicting categorical target variables such as churn might be to use a Logistic Regression Model. This will allow me to pass predictor variables into the model so that a definitive 0 (no churn) or 1 (churn) can be outputted for each given customer - this avoids the need for a threshold. 
 
