@@ -264,6 +264,7 @@ Sample of dataset Used:
 
 source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data
 
+
 Dataset shape:
 <br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/140aa6b8-79b0-4af9-8310-744f24fdd4d1)
