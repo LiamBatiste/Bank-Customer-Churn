@@ -12,7 +12,7 @@
 A Bank has outsourced an already cleansed dataset, in hope that actionable insights can be gained to reduce customer churn within their company, particularly among credit card holders. By analysing the uncovered most influential factors of custoemr churn through Data
 Exploration and Predictive Modelling these insights can be leveraged to lower rates of customer churn for the Bank.
 
-The [dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset) cotains the following fields provided for this Analysis has been taken from Kaggle: 
+The [dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset) contains the following fields provided for this Analysis has been taken from Kaggle: 
 
 - customer_id, unused variable.
 - credit_score, used as input.
@@ -32,11 +32,11 @@ Overview
 Provide an overview of the dataset, including its size, features, and target variable (churn).
 The dataset contained 1000 entries, each with no null data for the 12 fields. Datatypes were correctly assigned for all fields. 
 
-The features of the dataset were ranked corrleation-wise using Pearson Correlation Coefficients. All fields were compared with another using a Correlation Matrix: 
+The features of the dataset were ranked correlation-wise using Pearson Correlation Coefficients. All fields were compared with another using a Correlation Matrix: 
 <br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357)
 
-Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomoly detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation with the target variable of churn, which were as follows: 
+Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomaly detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation with the target variable of churn, which were as follows: 
 
 - age (ρ = 0.29) - as age increases, so does the rate of churn
 - active member (-0.16) - higher churn rate amongst active customers
@@ -86,18 +86,18 @@ Thus the majority of customers within the dataset are of 'fair' credit scores. C
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/d43b8e0c-3d06-4d6e-af19-e9d5ceed8bfe)
 
-**Credt card** - When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
+**Credit card** - When coupled with the fact a significantly greater number of customers have a credit card with the bank than do not, this would suggest that that credit cards is the primary product of interest for customers. This is of use given the Bank being analysed wants particular focus towards customers who use credit cards. 
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/4477aa62-4c14-42ed-846e-4473210d1229)
 
 After looking at the boxplots of certain metrics (age,  credit score and product number) there may be some need to outlier detection and removal.
 Further, there is clearly a much higher number of customers within the dataset who have a credit card, and so indicates that it is a popular product with the current bank being analysed and could provide opportunity to upsell other products given that customers appear receptive to such products. Thus, this predictor may be an area which I focus on more heavily, despite the aforementioned negligible negative Pearson correlation score. 
 
-Possible anomolous data was only observed for the age variable and porducts number of the customer. Anomolous data was determined as follows: 
+Possible anomalous data was only observed for the age variable and products number of the customer. Anomalous data was determined as follows: 
 <br></br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/9475936b-60cd-4060-8a02-bf7cab508b3f)
 
-After further consideration, the anomolous data for both fields was included in all subsequent analysis techniques, given the outliers from the each filed were explained by a lower count of elderly customers or customers utilising the maximum number of products provided from the Bank.
+After further consideration, the anomalous data for both fields was included in all subsequent analysis techniques, given the outliers from the each filed were explained by a lower count of elderly customers or customers utilising the maximum number of products provided from the Bank.
 
 In summary when examining the correlation heatmap, it seems of benefit to isolate variables such as age, balance, and customer activity status concerning customer churn. This focused analysis aims to gain insight into any underlying trends or patterns that may exist within these specific predictors in relation to churn propensity. Whether the customer has a credit card should also be explored further to help solve the proposed problem statement (possibly in tandem with the higher correlators mentioned). 
 
@@ -157,13 +157,13 @@ There can be an observed set of spikes in churn rate for non-holders for the age
 It appears that there is a higher density of retained small depositor customers, both with and without credit cards. Conversely, a higher density of large deposit customers, both with and without credit cards, are churning rather than being retained by the bank. This could be due to a greater focus by the bank on smaller depositors. The retention of small deposit customers suggests that the availability of credit cards has been an effective retention tool. On the other hand, the high churn of large depositors may not be a significant concern, as these customers are likely less reliant on credit cards as a source of capital, which could explain the higher density of churn among this customer segment. Overall, further analysis through predictive modelling using Multivariate Regression Analysis will help gain more insights for identifying customers at risk of churning.
 
 ## Concluding Examinations of Churn Rate - Balance and Credit Cards:
-There appears to be a slightly higher churn rate for credit card customers who are active with the bank. When looking at inactive customers,  there is a large difference between the higher churn rate for customers who do not have a credit card compared to those who do. Overall it seems that the credit card may hold some influence on customer retention for inactive members. It would be of use to the bank to obtain greater customer segmentation insight so that expectations can be met for active members with a credit card to improve retention rates. This might be achieved through more personalised customers offerings, to increased percieved customer choice/bespoke features associated with the credit card. Lastly, it would be of use to the bank to perform further segmentation analysis to validate these findings. 
+There appears to be a slightly higher churn rate for credit card customers who are active with the bank. When looking at inactive customers,  there is a large difference between the higher churn rate for customers who do not have a credit card compared to those who do. Overall it seems that the credit card may hold some influence on customer retention for inactive members. It would be of use to the bank to obtain greater customer segmentation insight so that expectations can be met for active members with a credit card to improve retention rates. This might be achieved through more personalised customers offerings, to increased perceived customer choice/bespoke features associated with the credit card. Lastly, it would be of use to the bank to perform further segmentation analysis to validate these findings. 
 
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/6b7fd1c3-e237-4fe5-9491-4ce62da5bbc0)
 
 ### Next Steps:
 
-To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken and if the model does not capture the complexity of the dataset, other models will be considered. This may help in understanding the underlying drivers of churn behavior specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
+To gain further understanding of customer churn amongst credit card holders, analysis through predictive modelling using Multivariate Regression Analysis will be undertaken and if the model does not capture the complexity of the dataset, other models will be considered. This may help in understanding the underlying drivers of churn behaviour specific to credit card holders and provide a more rigorous method of analysis than data exploration alone.
 
 # Predictive Modelling
 ## Introduction
@@ -181,16 +181,16 @@ The primary model of choice was Multivariate Linear Regression, given it's abili
 
 ## Model Performance
 ### Multivariate Linear Regression model (MLR) 
-Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead suited for continous target variables. 
+Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead suited for continuous target variables. 
 
-To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, a confusion matrix and aaccuracy scores were instead used to gain a deeper understanding of the; true negatives (TN), false positives (FP), false negatives (FN) and true positives (TP) which were as such: 
+To try and combat this, it was decided that a threshold of 0.5 would be used for binary classification (i.e. a predicted value of >=0.5 would evaluate to 0 or retained for said customer and a predicted value of >0.5 would evaluate to 1 or churned). With the threshold applied, a confusion matrix and accuracy scores were instead used to gain a deeper understanding of the; true negatives (TN), false positives (FP), false negatives (FN) and true positives (TP) which were as such: 
 
 #### TN: 2333 cases were correctly predicted as not churned
 #### FP: 46 cases were incorrectly predicted as churned (Type I error)
 #### FN: 566 cases were incorrectly predicted as not churned (Type II error)
 #### TP: 55 cases were correctly predicted as churned
 <br></br>
-Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calcuated.
+Precision: Precision measures how many of the predicted positive cases (churned) are actually positive were calculated.
 #### Precision = TP / (TP + FP) = 55 / (55 + 46) ≈ 0.544
 Meaning about 54.4% of the customers predicted as churned actually churned through model predictions.
 <br></br>
@@ -224,7 +224,7 @@ So the model identified only about 17.2% of all churned customers, so still poor
 Clearly, the LR model still was not effectively identifying specifically customers who have churned. This is concerning and needed to be further refined to minimise this recall error as it was essential for the Bank. Further, class weight was balanced to avoid the minority class of churning being underpredicted by the model to try and improve the evident high number of customers predicted to have not churn, when the opposite was true. After this adjustment to the LR model, the following performance measures were observed: 
 
 #### Accuracy Score: 0.70 (2 d.p.)
-Meaning the model predicted customer churn correctly approximately 70% of test data. 
+Meaning the model predicted customer churn correctly for approximately 70% of test data. 
 
 #### TN: 1660 cases were correctly predicted as not churned
 #### FP: 719 cases were incorrectly predicted as churned (Type I error)
@@ -238,7 +238,7 @@ Meaning about 38.3% of the customers predicted as churned actually churned throu
 #### Recall = 0.718
 So the model identified only about 71.8% of all churned customers, so still poor.
 <br></br>
-Thus the Model improved significantly with respect to recall, at the sacrafice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance. Therefore alternative predictive models were considered.
+Thus the Model improved significantly with respect to recall, at the sacrifice of precision (to be expected). So the last adjustment tried was further refinement of the LR model through fitting using more features from the dataset which led to little improvement of LR model performance. Therefore alternative predictive models were considered.
 ***
 ### Random Forest Model (RF) 
 When fitting the dataset to the RF model when comparing training (0.999) and test (0.854) scores a large difference of 14.5% was observed, this would suggest possible overfitting towards the training dataset's noise and outliers and so may not generalise well to unseen datasets. To combat this, hyperparameters were systematically searched over to find the best combination for your RF model (see below).
@@ -255,20 +255,20 @@ Feature importance was lastly analysed using the best performing RF model to gai
 
 # Actionable Recommendations 
 1. Focus on High-Impact Customer Segments:
-Based on the model's feature importance analysis, age, products number, balance, and credit score are the most influential factors contributing to customer churn. The bank should prioritize retaining older customers who hold credit cards, especially during their retirement years when churn rates tend to increase. Implementing targeted incentivized reward packages such as travel or health and wellness benefits could effectively retain this demographic.It should be noted that some of the statistical important can be explained by accounts being closed due to the customer becoming deceased. Despite this it should still be prioritised as an area of focus fo the Bank.
+Based on the model's feature importance analysis, age, products number, balance, and credit score are the most influential factors contributing to customer churn. The bank should prioritize retaining older customers who hold credit cards, especially during their retirement years when churn rates tend to increase. Implementing targeted incentivized reward packages such as travel or health and wellness benefits could effectively retain this demographic. It should be noted that some of the statistical important can be explained by accounts being closed due to the customer becoming deceased. Despite this it should still be prioritised as an area of focus fo the Bank.
 
 2. Leverage Product Offerings for Upselling:
 The Random Forest model highlights products as a significant driver of customer responsiveness. To capitalise on this finding, the bank should actively promote its product offerings to increase upselling opportunities and enhance customer retention. Tailoring these products through further segmentation and demographic analysis can amplify their appeal and impact on the bank's customer base.
 
 3. Implement Data-Driven Customer Retention Strategies:
-Utilise the insights gained from the model to develop data-driven customer retention strategies. This includes leveraging predictive analytics to proactively identify at-risk customers and personalize retention initiatives. By deploying targeted campaigns and personalized offers based on customer behaviors and preferences, the bank can mitigate churn effectively.
+Utilise the insights gained from the model to develop data-driven customer retention strategies. This includes leveraging predictive analytics to proactively identify at-risk customers and personalize retention initiatives. By deploying targeted campaigns and personalized offers based on customer behaviours and preferences, the bank can mitigate churn effectively.
 
 4. Monitor and Adapt Strategies Over Time:
-Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviors or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
+Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviours or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
 
 # Future improvements/Lessons Learnt
-- For future analysis, feature engineering such as 'tenure * balance' may provide additonal insight or model refinement for future analysis.
-- Understand the application of Precitive Models/Machine Learning Algorithms before using them in predictive analysis.
+- For future analysis, feature engineering such as 'tenure * balance' may provide additional insight or model refinement for future analysis.
+- Understand the application of predictive models/machine learning algorithms before using them in predictive analysis.
 - More applicable models such as the Extreme Gradient Boosting algorithm may provide more valuable insight given problem statement to identify feature importance.
 - The focus of customers with/without a credit card was lost during predictive analysis.
 
