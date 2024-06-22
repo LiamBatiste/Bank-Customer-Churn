@@ -257,6 +257,9 @@ Utilise the insights gained from the model to develop data-driven customer reten
 4. Monitor and Adapt Strategies Over Time:
 Continuously monitor the effectiveness of implemented strategies using real-time data through a robust data pipeline. This allows the bank to refine its approaches dynamically and respond promptly to shifts in customer behaviors or market conditions. Regularly updating the predictive models with new data ensures ongoing accuracy and relevance in customer churn prediction.
 
+# Future improvements/Lessons Learnt
+- 
+
 # Appendix 
 ### **Sample of dataset Used:**
 
