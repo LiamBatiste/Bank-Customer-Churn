@@ -276,6 +276,6 @@ Source - https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset
 
 **Multivariate Linear Regression accuracy score and confusion matrix:**
 <br></br>
-![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/140aa6b8-79b0-4af9-8310-744f24fdd4d1)
+![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/edfd220c-f11d-4eec-a8f9-b6976aa71927)
 ---
 
