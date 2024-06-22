@@ -24,7 +24,7 @@ Provide an overview of the dataset, including its size, features, and target var
 The dataset contained 1000 entries, each with no null data for the 12 fields. Datatypes were correctly assigned for all fields. 
 
 The features of the dataset were ranked corrleation-wise using Pearson Correlation Coefficients. All fields were compared with another using a Correlation Matrix: 
-
+<br>
 ![image](https://github.com/LiamBatiste/Bank-Customer-Churn/assets/68031898/56bf57d7-72ec-4e3b-bacd-c605c663f357)
 
 Descriptive statistics for each field were obtained along with data distribution to gain a better understanding of the data and decide if anomoly detection and removal was required. A greater focus for analysis was given to the fields which showed a higher correlation with the target variable of churn, which were as follows: 
