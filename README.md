@@ -168,24 +168,24 @@ The objective of this Model is to use the following variables as part of <b>Mult
 #### - Balance
 #### - Credit Card
 
-The model of choice was Multivariate Linear Regression
+The primary model of choice was Multivariate Linear Regression, given it's ability to facilitate the analysis that the impact of several predictors has on the target variable simultaneously. This might therefore be useful for predicting the likelihood/rate of a customer churning. Additionally it could potentially be used to quantify the contribution each predictor variable has towards customer churn with the Bank.
 
 ## Model Performance
 Discuss the performance of each model tested, including accuracy metrics (e.g., accuracy, precision, recall, F1-score) and any challenges encountered.
+#### Multivariate Linear Regression model (MLR) 
+Following Model fitting and training an r-Squared scored of 0.13 (2 d.p.) was obtained, meaning the model was performing very poorly. This was deemed to be due to output of the target variable needing to be either 1 (churned) or 1 (retained) and so categorical in nature. However, MLR is not suitable for predicting categorical outputs, but instead 
 
-## Refinement
+## Refinement 
 Explain how the model was refined using techniques like GridSearchCV or hyperparameter tuning to optimize performance.
 
-## Best Model
+## Best Model 
 Detail the best-performing model selected based on evaluation metrics, such as test accuracy and other relevant metrics.
 
-# Actionable Recommendations
+# Actionable Recommendations 
 Summarize the actionable recommendations derived from the predictive modeling results, emphasizing strategies to reduce customer churn based on the insights gained.
 
-# Conclusion
-Wrap up with a brief conclusion highlighting the main findings, the impact of the best model, and potential next steps for further improvement or application.
 
-# Appendix
+# Appendix 
 Include any additional details, code snippets, or visualizations that support your findings but weren't included in the main sections.
 
 
